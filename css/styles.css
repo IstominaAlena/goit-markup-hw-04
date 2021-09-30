@@ -201,8 +201,6 @@ p {
 }
 
 .header-icon {
-  width: 16px;
-  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -385,11 +383,6 @@ p {
   margin-bottom: 16px;
 }
 
-.social-icon {
-  width: 20px;
-  height: 20px;
-}
-
 .social-list {
   display: flex;
   flex-wrap: wrap;
@@ -446,11 +439,11 @@ p {
   align-items: center;
   fill: var(--svg-color);
 }
-
+/* 
 .client-icon {
   width: 106px;
   height: 60px;
-}
+} */
 
 .client-link:hover,
 .client-link:focus {
