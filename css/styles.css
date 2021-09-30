@@ -13,6 +13,7 @@
   --logo-color: #000000;
   --logo-color-footer: #ffffff;
   --card-border-color: #eeeeee;
+  --svg-color: #afb1b8;
 }
 
 /* =====Components===== */
@@ -371,6 +372,7 @@ p {
 
   text-align: center;
 
+  background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -379,17 +381,26 @@ p {
   padding: 30px 20px;
 }
 
+.member-container > p {
+  margin-bottom: 16px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
 .social-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-top: -10px;
 }
 
 .social-item {
-  width: 44px;
-  height: 44px;
-}
-
-.social-item:not(:first-child) {
   margin-left: 10px;
+  margin-top: 10px;
+  flex-basis: calc((100% - 4 * 10px) / 4);
 }
 
 .social-link {
@@ -397,21 +408,15 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 50% 50%;
-  margin-left: 30px;
   justify-content: center;
   align-items: center;
 
-  background: rgba(255, 255, 255, 0.1);
+  fill: var(--svg-color);
 }
 
-.social-icon {
-  width: 20px;
-  height: 20px;
-
+.social-link:hover,
+.social-link:focus {
   fill: var(--primary-background-color);
-}
-
-.social-link:hover {
   background-color: var(--accent-color);
 }
 
@@ -435,11 +440,11 @@ p {
   display: flex;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--svg-color);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  fill: #afb1b8;
+  fill: var(--svg-color);
 }
 
 .client-icon {
@@ -447,7 +452,8 @@ p {
   height: 60px;
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -461,6 +467,11 @@ p {
   padding-bottom: 60px;
 
   background-color: var(--accent-background-color);
+}
+
+.footer-container {
+  display: flex;
+  /* align-items: center; */
 }
 
 .contacts.bottom {
@@ -495,47 +506,34 @@ p {
   color: var(--accent-color);
 }
 
-/* ===== Join us ===== */
-
-.social-list {
-  display: flex;
-}
-
-.social-item {
-  width: 44px;
-  height: 44px;
-}
-
-.social-item:not(:first-child) {
-  margin-left: 10px;
-}
-
-.social-link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50% 50%;
-  margin-left: 30px;
-  justify-content: center;
-  align-items: center;
-
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
-
+.footer-social-link {
+  background-color: rgba(255, 255, 255, 0.1);
   fill: var(--primary-background-color);
 }
 
-.social-link:hover {
-  background-color: var(--accent-color);
+/* ===== Join us ===== */
+
+.join-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+
+.join-container {
+  max-width: 206px;
+  margin-left: 70px;
+  /* align-self: flex-start; */
+  padding-top: 12px;
 }
 
 /* ===== End Footer ===== */
 
-/* ===== PORTFOLIO PAGE ===== */
+/* ===== PORTFOLIO PAGE ============================================= */
 
 /* ===== Filter ===== */
 
