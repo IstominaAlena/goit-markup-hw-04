@@ -1,5 +1,4 @@
-/* ===== MAIN PAGE ===== */
-/* !!!!!!!!!!!!DELETE!!!!!!!!!! */
+/* ===== MAIN PAGE ===================================== */
 
 /* ===== Variables ===== */
 :root {
@@ -249,7 +248,6 @@ p {
 
 .hero.overlay {
   max-width: 1600px;
-  height: 600px;
 
   background-image: linear-gradient(
       to right,
@@ -289,7 +287,7 @@ p {
 .benefit-item::before {
   content: "";
   display: inline-block;
-  width: 270px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -365,7 +363,7 @@ p {
 .team-member {
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc((100% - 4 * 30px) / 4);
+  /* flex-basis: calc((100% - 4 * 30px) / 4); */
   border-radius: 0px 0px 4px 4px;
 
   text-align: center;
@@ -384,16 +382,14 @@ p {
 }
 
 .social-list {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  margin-left: -10px;
-  margin-top: -10px;
+  /* margin-left: -10px;
+  margin-top: -10px; */
 }
 
-.social-item {
+.social-item:not(:first-child) {
   margin-left: 10px;
-  margin-top: 10px;
-  flex-basis: calc((100% - 4 * 10px) / 4);
 }
 
 .social-link {
@@ -431,7 +427,7 @@ p {
 
 .client-link {
   display: flex;
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid var(--svg-color);
   border-radius: 4px;
@@ -576,14 +572,8 @@ p {
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
-.card:hover {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
 .card-link {
-  /* display: block; */
-
+  display: block;
   text-decoration: none;
 }
 
@@ -612,4 +602,8 @@ p {
   border-left: 1px solid var(--card-border-color);
 }
 
+.card-link:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 /* ===== End Gallery ===== */
