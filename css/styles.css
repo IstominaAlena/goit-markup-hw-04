@@ -439,11 +439,6 @@ p {
   align-items: center;
   fill: var(--svg-color);
 }
-/* 
-.client-icon {
-  width: 106px;
-  height: 60px;
-} */
 
 .client-link:hover,
 .client-link:focus {
@@ -520,7 +515,6 @@ p {
 .join-container {
   max-width: 206px;
   margin-left: 70px;
-  /* align-self: flex-start; */
   padding-top: 12px;
 }
 
