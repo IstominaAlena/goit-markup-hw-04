@@ -363,7 +363,6 @@ p {
 .team-member {
   margin-left: 30px;
   margin-top: 30px;
-  /* flex-basis: calc((100% - 4 * 30px) / 4); */
   border-radius: 0px 0px 4px 4px;
 
   text-align: center;
@@ -384,8 +383,6 @@ p {
 .social-list {
   display: inline-flex;
   flex-wrap: wrap;
-  /* margin-left: -10px;
-  margin-top: -10px; */
 }
 
 .social-item:not(:first-child) {
@@ -399,14 +396,20 @@ p {
   border-radius: 50% 50%;
   justify-content: center;
   align-items: center;
-
-  fill: var(--svg-color);
 }
 
 .social-link:hover,
 .social-link:focus {
-  fill: var(--primary-background-color);
   background-color: var(--accent-color);
+}
+
+.social-icon {
+  fill: var(--svg-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--primary-background-color);
 }
 
 /* ===== End Our team ===== */
@@ -433,13 +436,20 @@ p {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  fill: var(--svg-color);
 }
 
 .client-link:hover,
 .client-link:focus {
-  fill: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.client-icon {
+  fill: var(--svg-color);
+}
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: var(--accent-color);
 }
 
 /* ===== End Our clients===== */
